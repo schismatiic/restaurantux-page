@@ -76,7 +76,7 @@ h1 span {
   width: 736px;
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
 }
-.information-card {
+.information__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,6 +89,6 @@ h1 span {
   border-radius: 10px;
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
 }
-.information-card h3 {
+.information__card h3 {
   font-size: 24px;
 }
