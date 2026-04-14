@@ -45,6 +45,12 @@ h1 span {
 }
 /* =============================================================================================== */
 /* Nav  */
+header {
+  background-color: rgb(57, 57, 57);
+  padding: 10px 100px;
+  border-radius: 100px;
+  box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
+}
 .nav-button {
   background-color: var(--red-color);
   color: var(--clear-color);
@@ -94,14 +100,14 @@ h1 span {
 }
 /* =============================================================================================== */
 /* Menu  */
-#menu__container {
+.menu__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-#menu__container h2 {
+.menu__container h2 {
   background-color: rgba(0, 0, 0, 0.867);
   color: var(--clear-color);
   padding: 4px 50px;
@@ -117,4 +123,28 @@ h1 span {
 }
 .menu__item h3 {
   font-weight: 700;
+}
+/* =============================================================================================== */
+/* About  */
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.about__container h2 {
+  background-color: rgba(0, 0, 0, 0.867);
+  color: var(--clear-color);
+  padding: 4px 50px;
+  margin-bottom: 6px;
+}
+.about__container p {
+  background-color: var(--card-bgc);
+  margin: 10px 0;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
 }
