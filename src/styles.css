@@ -34,6 +34,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(57, 57, 57);
+  padding: 10px 100px;
+  border-radius: 100px;
+  box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
 }
 h1 {
   color: var(--clear-color);
@@ -45,12 +49,6 @@ h1 span {
 }
 /* =============================================================================================== */
 /* Nav  */
-header {
-  background-color: rgb(57, 57, 57);
-  padding: 10px 100px;
-  border-radius: 100px;
-  box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
-}
 .nav-button {
   background-color: var(--red-color);
   color: var(--clear-color);
@@ -81,6 +79,7 @@ header {
   margin-top: 20px;
   width: 736px;
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 .information__card {
   display: flex;

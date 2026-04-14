@@ -1,7 +1,10 @@
 import "./styles.css";
-import { home, menu, about, content } from "./home.js";
+import { home, menu, about, content } from "./index.js";
+const menu__container = document.createElement("ul");
+
 const renderMenu = () => {
-  const menu__container = document.createElement("ul");
+  menu__container.textContent = "";
+
   const menu__title = document.createElement("h2");
   menu__title.textContent = "Menu";
   menu__container.className = "menu__container";
@@ -33,4 +36,4 @@ const renderMenu = () => {
   content.appendChild(menu__container);
 };
 
-export { renderMenu };
+export { renderMenu, menu__container };

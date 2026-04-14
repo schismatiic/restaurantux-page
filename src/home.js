@@ -1,15 +1,9 @@
 import "./styles.css";
-import { page } from "./index.js";
-// ====================== DOM Buttons
-const home = document.getElementById("home");
-const menu = document.getElementById("menu");
-const about = document.getElementById("about");
-// ====================== DOM Content
-const content = document.getElementById("content");
-
+import { page, home, menu, about, content } from "./index.js";
+const home__container = document.createElement("div");
 const renderIndex = () => {
+  home__container.textContent = "";
   // ====================== DOM Index only
-  const home__container = document.createElement("div");
   const hero = document.createElement("img");
   const information__card = document.createElement("div");
   const title = document.createElement("h3");
@@ -30,4 +24,4 @@ const renderIndex = () => {
   information__card.appendChild(paragraph);
   content.appendChild(home__container);
 };
-export { home, menu, about, content, renderIndex };
+export { renderIndex, home__container };

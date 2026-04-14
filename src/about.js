@@ -1,7 +1,12 @@
 import "./styles.css";
-import { home, menu, about, content } from "./home.js";
+import { home, menu, about, content, page } from "./index.js";
+const about__container = document.createElement("div");
+let aboutRendered = false;
+
 const renderAbout = () => {
-  const about__container = document.createElement("div");
+  about__container.textContent = "";
+
+  aboutRendered = true;
   const about__title = document.createElement("h2");
   const about__p = document.createElement("p");
   about__title.textContent = "About";
@@ -12,4 +17,4 @@ const renderAbout = () => {
   about__container.appendChild(about__p);
   content.appendChild(about__container);
 };
-export { renderAbout };
+export { renderAbout, about__container };
